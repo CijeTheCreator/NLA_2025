@@ -1,0 +1,35 @@
+/* stylesheets/mobile.css */
+
+/* Adjust header padding for smaller screens */
+.header__padding {
+  padding: 20px; /* Adjust as needed */
+}
+
+/* Make logo smaller on mobile */
+.mobileLogoFlex img {
+  max-width: 100px; /* Adjust max-width to fit your design */
+}
+
+/* Stack navigation links vertically on smaller screens */
+.mobileButtonFlex ul {
+  flex-direction: column;
+}
+
+/* Style navigation links for better touch interaction */
+.navigation__link {
+  padding: 10px 0; /* Adjust padding as needed */
+}
+
+/* Adjust font size and spacing for article summaries on mobile */
+.article-summary .media-body {
+  font-size: 14px; /* Adjust font size */
+  margin-bottom: 15px; /* Adjust spacing */
+}
+
+/* Ensure download buttons are responsive */
+.galley-link.btn {
+  display: block; /* Ensure buttons take full width on smaller screens */
+  width: 100%;
+  text-align: center;
+  margin-top: 10px; /* Adjust spacing */
+}

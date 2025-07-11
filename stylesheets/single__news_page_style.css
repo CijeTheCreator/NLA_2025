@@ -1,0 +1,2105 @@
+/*! CSS Used from: Embedded */
+.osano-visually-hidden {
+  height: 1px;
+  left: -10000px;
+  margin: -1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+.osano-cm-close {
+  stroke-width: 1px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: initial;
+  cursor: pointer;
+  height: 20px;
+  margin: 0.5em;
+  min-height: 20px;
+  min-width: 20px;
+  order: 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0;
+  text-decoration: none;
+  transform: rotate(0deg);
+  transition-duration: 0.2s;
+  transition-property: transform, color, background-color, stroke, stroke-width;
+  transition-timing-function: ease-out;
+  width: 20px;
+  z-index: 2;
+}
+.osano-cm-close:focus,
+.osano-cm-close:hover {
+  stroke-width: 2px;
+  transform: rotate(90deg);
+}
+.osano-cm-link {
+  cursor: pointer;
+  text-decoration: underline;
+  transition-duration: 0.2s;
+  transition-property: color;
+  transition-timing-function: ease-out;
+}
+.osano-cm-link:active,
+.osano-cm-link:hover {
+  outline: none;
+}
+.osano-cm-link:focus {
+  font-weight: 700;
+  outline: none;
+}
+.osano-cm-widget {
+  background: none;
+  border: none;
+  bottom: 12px;
+  cursor: pointer;
+  height: 40px;
+  opacity: 0.9;
+  outline: none;
+  padding: 0;
+  position: fixed;
+  transition: transform 0.1s linear 0s, opacity 0.4s linear 0ms,
+    visibility 0ms linear 0ms;
+  visibility: visible;
+  width: 40px;
+  z-index: 2147483636;
+}
+.osano-cm-widget--position_left {
+  left: 12px;
+}
+.osano-cm-widget:focus,
+.osano-cm-widget:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.osano-cm-dialog {
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 1em;
+  line-height: 1.25;
+  overflow: auto;
+  padding: 1.5em;
+  position: fixed;
+  transition-delay: 0ms, 0ms;
+  transition-duration: 0.7s, 0ms;
+  transition-property: opacity, visibility;
+  visibility: visible;
+  z-index: 2147483637;
+}
+.osano-cm-dialog--hidden {
+  opacity: 0;
+  transition-delay: 0ms, 0.7s;
+  visibility: hidden;
+}
+.osano-cm-dialog--type_bar {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  right: 0;
+}
+@media screen and (min-width: 768px) {
+  .osano-cm-dialog--type_bar {
+    flex-direction: row;
+  }
+}
+.osano-cm-dialog__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.osano-cm-dialog--type_bar .osano-cm-dialog__content {
+  flex: 5;
+  margin-bottom: 0.25em;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .osano-cm-dialog--type_bar .osano-cm-dialog__content {
+    max-height: 30vh;
+  }
+}
+.osano-cm-dialog--type_bar.osano-cm-dialog--position_bottom {
+  bottom: 0;
+}
+.osano-cm-content__message {
+  margin-bottom: 1em;
+  padding-bottom: 1.5em;
+  word-break: break-word;
+}
+.osano-cm-storage-policy {
+  display: inline-block;
+}
+.osano-cm-info-dialog {
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition-delay: 0ms, 0ms;
+  transition-duration: 0.2s, 0ms;
+  transition-property: opacity, visibility;
+  visibility: visible;
+  width: 100vw;
+  z-index: 2147483638;
+}
+.osano-cm-info-dialog--hidden {
+  opacity: 0;
+  transition-delay: 0ms, 0.2s;
+  visibility: hidden;
+}
+.osano-cm-info {
+  -webkit-animation: delay-overflow 0.4s;
+  animation: delay-overflow 0.4s;
+  bottom: 0;
+  box-shadow: 0 0 2px 2px #ccc;
+  box-sizing: border-box;
+  max-width: 20em;
+  overflow-x: visible;
+  overflow-y: visible;
+  position: fixed;
+  top: 0;
+  transition-duration: 0.4s;
+  transition-property: transform;
+  width: 100%;
+}
+.osano-cm-info--position_left {
+  left: 0;
+  transform: translate(-100%);
+}
+.osano-cm-info-views {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100%;
+  transition-duration: 0.4s;
+  transition-property: transform;
+  width: 100%;
+}
+.osano-cm-header {
+  margin: 0 0 -1em;
+  padding: 1em 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.osano-cm-info-dialog-header {
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  left: auto;
+  min-height: 3.25em;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.osano-cm-info-dialog-header__header {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  font-size: 1em;
+  justify-content: flex-start;
+  margin: 0;
+  order: 1;
+  padding: 1em 0.75em;
+}
+.osano-cm-info-dialog-header__close {
+  position: relative;
+}
+.osano-cm-window {
+  direction: ltr;
+  text-align: left;
+}
+.osano-cm-dialog {
+  background: #edeff5;
+  color: #838391;
+}
+.osano-cm-dialog__close {
+  color: #838391;
+  stroke: #838391;
+}
+.osano-cm-dialog__close:focus {
+  background-color: #838391;
+  border-color: #838391;
+  stroke: #edeff5;
+}
+.osano-cm-dialog__close:hover {
+  stroke: #6f6f7d;
+}
+.osano-cm-dialog__close:focus:hover {
+  stroke: #d9dbe1;
+}
+.osano-cm-info-dialog {
+  background: rgba(79, 79, 79, 0.7);
+}
+.osano-cm-header,
+.osano-cm-info-dialog-header {
+  background: #f5f5f5;
+  background: linear-gradient(
+    180deg,
+    #f5f5f5 2.5em,
+    rgba(245, 245, 245, 0) 100%
+  );
+}
+.osano-cm-info {
+  background: #f5f5f5;
+  color: #4f4f4f;
+}
+.osano-cm-close {
+  background-color: transparent;
+  border-color: transparent;
+}
+.osano-cm-info-dialog-header__close {
+  color: #4f4f4f;
+  stroke: #4f4f4f;
+}
+.osano-cm-info-dialog-header__close:focus {
+  background-color: #4f4f4f;
+  border-color: #4f4f4f;
+  stroke: #f5f5f5;
+}
+.osano-cm-info-dialog-header__close:hover {
+  stroke: #636363;
+}
+.osano-cm-info-dialog-header__close:focus:hover {
+  stroke: #e1e1e1;
+}
+.osano-cm-link {
+  color: #000000;
+}
+.osano-cm-link:hover,
+.osano-cm-link:active {
+  color: #000000;
+}
+.osano-cm-link:focus {
+  color: #141414;
+}
+/*! CSS Used from: Embedded */
+.osano-visually-hidden {
+  height: 1px;
+  left: -10000px;
+  margin: -1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+.osano-cm-close {
+  stroke-width: 1px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: initial;
+  cursor: pointer;
+  height: 20px;
+  margin: 0.5em;
+  min-height: 20px;
+  min-width: 20px;
+  order: 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0;
+  text-decoration: none;
+  transform: rotate(0deg);
+  transition-duration: 0.2s;
+  transition-property: transform, color, background-color, stroke, stroke-width;
+  transition-timing-function: ease-out;
+  width: 20px;
+  z-index: 2;
+}
+.osano-cm-close:focus,
+.osano-cm-close:hover {
+  stroke-width: 2px;
+  transform: rotate(90deg);
+}
+.osano-cm-link {
+  cursor: pointer;
+  text-decoration: underline;
+  transition-duration: 0.2s;
+  transition-property: color;
+  transition-timing-function: ease-out;
+}
+.osano-cm-link:active,
+.osano-cm-link:hover {
+  outline: none;
+}
+.osano-cm-link:focus {
+  font-weight: 700;
+  outline: none;
+}
+.osano-cm-widget {
+  background: none;
+  border: none;
+  bottom: 12px;
+  cursor: pointer;
+  height: 40px;
+  opacity: 0.9;
+  outline: none;
+  padding: 0;
+  position: fixed;
+  transition: transform 0.1s linear 0s, opacity 0.4s linear 0ms,
+    visibility 0ms linear 0ms;
+  visibility: visible;
+  width: 40px;
+  z-index: 2147483636;
+}
+.osano-cm-widget--position_left {
+  left: 12px;
+}
+.osano-cm-widget:focus,
+.osano-cm-widget:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.osano-cm-dialog {
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 1em;
+  line-height: 1.25;
+  overflow: auto;
+  padding: 1.5em;
+  position: fixed;
+  transition-delay: 0ms, 0ms;
+  transition-duration: 0.7s, 0ms;
+  transition-property: opacity, visibility;
+  visibility: visible;
+  z-index: 2147483637;
+}
+.osano-cm-dialog--hidden {
+  opacity: 0;
+  transition-delay: 0ms, 0.7s;
+  visibility: hidden;
+}
+.osano-cm-dialog--type_bar {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  right: 0;
+}
+@media screen and (min-width: 768px) {
+  .osano-cm-dialog--type_bar {
+    flex-direction: row;
+  }
+}
+.osano-cm-dialog__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.osano-cm-dialog--type_bar .osano-cm-dialog__content {
+  flex: 5;
+  margin-bottom: 0.25em;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .osano-cm-dialog--type_bar .osano-cm-dialog__content {
+    max-height: 30vh;
+  }
+}
+.osano-cm-dialog--type_bar.osano-cm-dialog--position_bottom {
+  bottom: 0;
+}
+.osano-cm-content__message {
+  margin-bottom: 1em;
+  padding-bottom: 1.5em;
+  word-break: break-word;
+}
+.osano-cm-storage-policy {
+  display: inline-block;
+}
+.osano-cm-info-dialog {
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition-delay: 0ms, 0ms;
+  transition-duration: 0.2s, 0ms;
+  transition-property: opacity, visibility;
+  visibility: visible;
+  width: 100vw;
+  z-index: 2147483638;
+}
+.osano-cm-info-dialog--hidden {
+  opacity: 0;
+  transition-delay: 0ms, 0.2s;
+  visibility: hidden;
+}
+.osano-cm-info {
+  -webkit-animation: delay-overflow 0.4s;
+  animation: delay-overflow 0.4s;
+  bottom: 0;
+  box-shadow: 0 0 2px 2px #ccc;
+  box-sizing: border-box;
+  max-width: 20em;
+  overflow-x: visible;
+  overflow-y: visible;
+  position: fixed;
+  top: 0;
+  transition-duration: 0.4s;
+  transition-property: transform;
+  width: 100%;
+}
+.osano-cm-info--position_left {
+  left: 0;
+  transform: translate(-100%);
+}
+.osano-cm-info-views {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100%;
+  transition-duration: 0.4s;
+  transition-property: transform;
+  width: 100%;
+}
+.osano-cm-header {
+  margin: 0 0 -1em;
+  padding: 1em 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.osano-cm-info-dialog-header {
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  left: auto;
+  min-height: 3.25em;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.osano-cm-info-dialog-header__header {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  font-size: 1em;
+  justify-content: flex-start;
+  margin: 0;
+  order: 1;
+  padding: 1em 0.75em;
+}
+.osano-cm-info-dialog-header__close {
+  position: relative;
+}
+.osano-cm-window {
+  direction: ltr;
+  text-align: left;
+}
+.osano-cm-dialog {
+  background: #edeff5;
+  color: #838391;
+}
+.osano-cm-dialog__close {
+  color: #838391;
+  stroke: #838391;
+}
+.osano-cm-dialog__close:focus {
+  background-color: #838391;
+  border-color: #838391;
+  stroke: #edeff5;
+}
+.osano-cm-dialog__close:hover {
+  stroke: #6f6f7d;
+}
+.osano-cm-dialog__close:focus:hover {
+  stroke: #d9dbe1;
+}
+.osano-cm-info-dialog {
+  background: rgba(79, 79, 79, 0.7);
+}
+.osano-cm-header,
+.osano-cm-info-dialog-header {
+  background: #f5f5f5;
+  background: linear-gradient(
+    180deg,
+    #f5f5f5 2.5em,
+    rgba(245, 245, 245, 0) 100%
+  );
+}
+.osano-cm-info {
+  background: #f5f5f5;
+  color: #4f4f4f;
+}
+.osano-cm-close {
+  background-color: transparent;
+  border-color: transparent;
+}
+.osano-cm-info-dialog-header__close {
+  color: #4f4f4f;
+  stroke: #4f4f4f;
+}
+.osano-cm-info-dialog-header__close:focus {
+  background-color: #4f4f4f;
+  border-color: #4f4f4f;
+  stroke: #f5f5f5;
+}
+.osano-cm-info-dialog-header__close:hover {
+  stroke: #636363;
+}
+.osano-cm-info-dialog-header__close:focus:hover {
+  stroke: #e1e1e1;
+}
+.osano-cm-link {
+  color: #000000;
+}
+.osano-cm-link:hover,
+.osano-cm-link:active {
+  color: #000000;
+}
+.osano-cm-link:focus {
+  color: #141414;
+}
+/*! CSS Used from: https://www.hindawi.com/static/themes/hindawi/base.css */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "IBM Plex Sans", sans-serif;
+  line-height: 1.4;
+  font-size: 16px;
+  word-break: break-word;
+  margin: 0;
+}
+button {
+  cursor: pointer;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.no__focus__outline button:focus,
+.no__focus__outline a:focus {
+  outline: none;
+}
+.icon-themeable.icon-colored:before {
+  color: #6ba439;
+}
+.osano-cm-widget {
+  display: none;
+}
+/*! CSS Used from: https://static.hindawi.com/next_assets/yWtXSflDw7q_hDYibdZYB/_next/static/css/common.533ef8bf.chunk.css */
+.lgN2amz0cDtZbavzXqgD6Q-- {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.H8hfVU4c2FQpv5cQoLz3UA--,
+.lM9SsQjXdQKencYIqMYizg--,
+.XArGeWWMAngmfSWjkqVxCw--,
+.VckXzlDERs9k2yg2mtENLw--,
+._1U9wpDtlhiM6tvVR81-C5g-- {
+  position: relative;
+  width: 100%;
+}
+.H8hfVU4c2FQpv5cQoLz3UA-- {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+@media (min-width: 768px) {
+  .lM9SsQjXdQKencYIqMYizg-- {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .XArGeWWMAngmfSWjkqVxCw-- {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+}
+@media (min-width: 992px) {
+  .VckXzlDERs9k2yg2mtENLw-- {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  ._1U9wpDtlhiM6tvVR81-C5g-- {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+}
+[class*=" icon-"] {
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.x1uIY6G8kAf5o74hq2hwQw--:before {
+  content: "\E903";
+}
+._8Tla3E8hjhv7om11QcztPQ--:before {
+  content: "\E905";
+}
+.PSywN9-ef2kGYBHKa8bYwA-- {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+._3mAx4E1GFW1XTGmVaxttLw--,
+.rUVPOGlARWZFUUG1v0FhXA--,
+._9rEK2aZXzPtwPDN2-Boxyg-- {
+  position: relative;
+  width: 100%;
+}
+._3mAx4E1GFW1XTGmVaxttLw-- {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+@media (min-width: 992px) {
+  .rUVPOGlARWZFUUG1v0FhXA-- {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  ._9rEK2aZXzPtwPDN2-Boxyg-- {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+.WD7klFpzjSAkh80s38nxrg-- {
+  max-width: 1440px;
+  padding: 20px;
+  margin: auto;
+}
+article hr {
+  height: 1px;
+  color: #cccccc;
+  background-color: #cccccc;
+  border-top: 0px solid #cccccc;
+  border-right: 0px solid #cccccc;
+  border-bottom: 0px solid #cccccc;
+  border-left: 0px solid #cccccc;
+  margin: 24px 0px;
+  margin: 0px 0px 12px 0px;
+}
+.left,
+.right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: space-between;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+}
+/*! CSS Used from: Embedded */
+.bUhGXt {
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.ivbKJD {
+  display: inline-block;
+}
+.fopjOz {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+.fopjOz li {
+  padding: 0px 10px;
+}
+.fopjOz li a {
+  padding: 0px;
+}
+.fopjOz a {
+  transition: border 0.25s ease-in-out 0s;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  border-radius: 0px;
+}
+.fopjOz a:hover {
+  border-bottom: 2px solid rgb(155, 155, 155);
+  padding-bottom: 4px;
+}
+.jOLhQl {
+  vertical-align: middle;
+  height: 24px;
+}
+.iiusBg {
+  vertical-align: middle;
+  height: 16px;
+}
+.TsaZF {
+  vertical-align: middle;
+  height: 40px;
+}
+.bNmdOy {
+  max-width: 1440px;
+  margin: 0px auto;
+  width: 100%;
+}
+.khbeDd {
+  vertical-align: middle;
+  font-size: 24px;
+}
+.jzXSTA {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1000;
+  background: rgb(255, 255, 255);
+  height: 70px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 1px solid rgb(227, 227, 227);
+  transition: all 0.5s ease 0s;
+}
+@media (max-width: 991px) {
+  .jzXSTA {
+    border-bottom: 1px solid rgb(227, 227, 227);
+  }
+}
+@media (max-width: 767px) {
+  .jzXSTA {
+    margin-bottom: 70px;
+    height: 60px;
+  }
+}
+.jzXSTA .header__padding {
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+@media (max-width: 991px) {
+  .jzXSTA .header__padding {
+    padding: 0px 0px 0px 20px;
+  }
+}
+.jGJLow {
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+}
+.jGJLow a {
+  padding: 10px;
+}
+.jGJLow nav {
+  align-self: center;
+}
+@media (max-width: 991px) {
+  .jGJLow nav {
+    display: none;
+  }
+}
+.jGJLow nav ul {
+  margin-right: 16px;
+}
+.jGJLow nav ul li a {
+  color: rgb(74, 74, 74);
+  padding: 10px 0px 4px;
+  margin: 0px 6px;
+}
+@media (max-width: 991px) {
+  .jGJLow .icon-themeable {
+    border-left: 1px solid rgb(227, 227, 227);
+    padding: 23px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .jGJLow .icon-themeable {
+    padding: 18px 20px;
+  }
+}
+@media (max-width: 767.5px) {
+  .jGJLow.mobileButtonFlex {
+    flex: 0 0 51%;
+    max-width: 51%;
+  }
+}
+.ldSkVQ {
+  display: none;
+  padding: 0px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  height: 59px;
+}
+@media (min-width: 768px) {
+  .ldSkVQ {
+    height: 69px;
+  }
+}
+@media (max-width: 991px) {
+  .ldSkVQ {
+    display: inline-block;
+  }
+}
+.epRoim a {
+  display: inline-block;
+  padding: 15px 0px;
+}
+@media (max-width: 767px) {
+  .epRoim a {
+    padding: 10px 0px;
+  }
+}
+@media (max-width: 767.5px) {
+  .epRoim.mobileLogoFlex {
+    flex: 0 0 49%;
+    max-width: 49%;
+  }
+}
+.hbVEoI {
+  border: none;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  margin: 10px 0px 0px 17px;
+  position: relative;
+}
+@media (max-width: 991.5px) {
+  .hbVEoI {
+    margin: 0px 3px 0px 16px;
+    padding: 0px;
+    height: 69px;
+  }
+}
+@media (max-width: 767.5px) {
+  .hbVEoI {
+    height: 59px;
+  }
+}
+.gjctdt {
+  vertical-align: middle;
+  height: 39px;
+}
+@media (max-width: 401px) {
+  .gjctdt {
+    max-width: 100%;
+  }
+}
+.UfQBX {
+  background-color: rgb(13, 41, 52);
+  font-size: 16px;
+  position: relative;
+  z-index: 3;
+}
+@media (max-width: 991px) {
+  .UfQBX {
+    z-index: 0;
+  }
+}
+.fkikFi {
+  border-bottom: 1px solid rgb(130, 130, 130);
+  border-top-color: rgb(130, 130, 130);
+  border-right-color: rgb(130, 130, 130);
+  border-left-color: rgb(130, 130, 130);
+  padding: 29px 40px 30px;
+}
+@media (min-width: 992px) {
+  .fkikFi {
+    padding: 40px 40px 40px 35px;
+  }
+}
+.fkikFi .primary__footer .mobile {
+  display: block;
+}
+.fkikFi .primary__footer .desktop {
+  display: none;
+}
+@media (min-width: 992px) {
+  .fkikFi .primary__footer {
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
+  .fkikFi .primary__footer .mobile {
+    display: none;
+  }
+  .fkikFi .primary__footer .desktop {
+    display: block;
+  }
+}
+.fkikFi nav ul {
+  list-style: none;
+  padding: 0px;
+  line-height: 2;
+  font-size: 16px;
+  margin: 18px 0px 0px;
+}
+.fkikFi nav ul:first-child {
+  margin: 0px;
+}
+@media (min-width: 1200px) {
+  .fkikFi nav ul {
+    font-size: 16px;
+  }
+}
+@media (min-width: 992px) {
+  .fkikFi nav ul {
+    margin: 0px;
+  }
+}
+.fkikFi nav ul li {
+  line-height: 22px;
+  padding: 5px;
+}
+.fkikFi nav ul li a {
+  color: rgb(216, 216, 216);
+  font-weight: 500;
+  display: block;
+  font-size: 16px;
+}
+.ihbKmM {
+  padding-top: 6px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  margin-bottom: 29px;
+}
+@media (min-width: 992px) {
+  .ihbKmM {
+    flex: 0 0 25%;
+    max-width: fit-content;
+  }
+}
+.ecHxGW {
+  margin-right: 20px;
+}
+.ecHxGW:last-child {
+  margin-right: 0px;
+}
+.filPdg {
+  margin-top: 15px;
+}
+.hAkHto {
+  line-height: 30px;
+  font-size: 11px;
+  padding: 10px 20px;
+  text-align: center;
+}
+.hAkHto a {
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+}
+.fTkdCR {
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+}
+@media (min-width: 767.5px) {
+  .fTkdCR {
+    font-size: 24px;
+  }
+}
+@media (min-width: 991.5px) {
+  .fTkdCR {
+    font-size: 25px;
+  }
+}
+.fTkdCR::after {
+  content: "";
+  display: inline-block;
+  margin-top: 0.2em;
+  margin-left: 0.5em;
+}
+.jZOxOO {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-top: 0px;
+}
+@media (min-width: 767.5px) {
+  .jZOxOO {
+    font-size: 40px;
+  }
+}
+@media (min-width: 991.5px) {
+  .jZOxOO {
+    font-size: 40px;
+  }
+}
+.kbSaKY {
+  color: black;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 800;
+  font-size: 16px;
+}
+.coZTve {
+  font-size: 14px;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  display: inline;
+}
+.jwRblM {
+  object-fit: cover;
+}
+.hNPrIr {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+.fXBKFa {
+  display: inline-block;
+}
+@media (max-width: 991.5px) {
+  .fXBKFa {
+    width: 100%;
+  }
+}
+.bnbfTS {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0px;
+  width: 100%;
+  border-top: 1px solid rgb(255, 255, 255);
+  padding: 0px !important;
+}
+.bnbfTS li {
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 17px 0px;
+  min-height: 48px;
+}
+.bnbfTS li a {
+  display: block;
+}
+.bnbfTS .iconBorder {
+  border-right: 1px solid rgb(255, 255, 255);
+}
+.bnbfTS img {
+  width: 23px;
+}
+.bnbfTS img.socialLinkedin {
+  width: 28px;
+}
+.jzquBV hr {
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  border-image: initial;
+  border-top: 1px solid rgb(227, 227, 227);
+  margin-bottom: 23px;
+}
+.fRQmNV {
+  margin-top: 29px;
+  margin-bottom: 7px;
+}
+.comSjt {
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+.comSjt h3 {
+  display: none;
+}
+.comSjt ul {
+  border-top: none;
+}
+.comSjt ul li {
+  flex: unset;
+  padding: 17px 40px 17px 0px;
+}
+.comSjt ul li.iconBorder {
+  border-right: none;
+}
+@media (min-width: 992px) {
+  .comSjt {
+    display: none;
+  }
+}
+.eYrwCv {
+  width: 100%;
+  display: block;
+  margin: 0px auto;
+  font-size: 16px;
+  word-break: break-word;
+}
+.eYrwCv hr {
+  margin: 10px 0px;
+}
+.eYrwCv a {
+  color: rgb(77, 138, 23);
+  text-decoration: none;
+  cursor: pointer;
+}
+.eYrwCv a:hover {
+  text-decoration: underline;
+}
+.iyQPke {
+  display: inline-flex;
+  font-size: 18px;
+  margin: 0px;
+  width: 100%;
+}
+.fNatmn {
+  display: inline-flex;
+  color: rgb(65, 117, 5);
+}
+@media (min-width: 992px) {
+  .fNatmn {
+    margin-bottom: 24px;
+  }
+}
+.iHPmBP {
+  margin: 8px 0px 14px;
+}
+.eBVayB {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  font-size: 12px;
+}
+.eBVayB img {
+  padding-right: 8px;
+}
+.eBVayB.left {
+  width: 100%;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+}
+.eBVayB.right {
+  width: 100%;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+}
+.OcqhR {
+  display: flex;
+  border-bottom: 1px solid rgb(227, 227, 227);
+  width: 100%;
+  font-size: 14px;
+}
+.OcqhR div {
+  padding: 17px 10px;
+  width: 50%;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+.OcqhR .right {
+  width: 50%;
+  min-width: 115px;
+}
+.OcqhR div:first-child {
+  border-right: 1px solid rgb(227, 227, 227);
+}
+.OcqhR img {
+  height: 16px;
+}
+.OcqhR .icon__user img {
+  width: 22px;
+}
+.OcqhR .icon__clock img {
+  width: 24px;
+}
+.hgDjzj {
+  font-size: 14px;
+  padding: 0px 20px;
+}
+.hgDjzj p {
+  line-height: 1.5;
+}
+.kpQcZg {
+  margin-bottom: 30px;
+}
+.gfhMAM {
+  transition: transform 0.5s ease 0s;
+  top: 0px;
+}
+@media (min-width: 767.5px) {
+  .gfhMAM {
+    top: 0px;
+  }
+}
+@media (min-width: 991.5px) {
+  .gfhMAM {
+    position: fixed;
+    top: 105px;
+  }
+}
+.bPuhhH {
+  transition: transform 0.5s ease 0s;
+  top: 0px;
+}
+@media (min-width: 767.5px) {
+  .bPuhhH {
+    top: 0px;
+  }
+}
+@media (min-width: 991.5px) {
+  .bPuhhH {
+    position: fixed;
+    top: 130px;
+  }
+}
+.kmJCMv {
+  font-size: 14px;
+  padding: 16px 20px 24px;
+}
+@media (max-width: 991px) {
+  .kmJCMv {
+    display: none;
+  }
+}
+.hLtLzw {
+  font-size: 14px;
+}
+.hLtLzw:hover {
+  text-decoration: underline;
+}
+.ffOKm {
+  font-size: 14px;
+  font-weight: bold;
+}
+.iksxGv {
+  width: 100%;
+  height: auto;
+  background-color: rgb(74, 74, 74);
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  padding: 15px 20px;
+  line-height: 20px;
+  position: fixed;
+  bottom: 0px;
+  z-index: 10000;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  transition: transform 0.25s ease 0s;
+}
+.iksxGv a {
+  color: rgb(126, 211, 33);
+}
+.iksxGv p {
+  display: inline;
+  margin: 0px;
+}
+.jhAkoi {
+  background: transparent;
+  border: none;
+  height: 20px;
+  width: 20px;
+  margin-left: 20px;
+  padding: 0px;
+  cursor: pointer;
+}
+.kmmnJW {
+  min-width: 20px;
+  height: 20px;
+}
+@media (min-width: 991px) {
+  .ldBNas {
+    order: 0;
+    max-width: 336px;
+  }
+}
+@media (max-width: 991px) {
+  .bmWNkb #sharePostSection {
+    display: none;
+  }
+}
+@media (min-width: 991px) {
+  .bmWNkb {
+    order: 2;
+    max-width: 336px;
+  }
+}
+.ghyCyp {
+  margin-top: 140px;
+}
+@media (min-width: 767.5px) {
+  .ghyCyp {
+    margin-top: 85px;
+  }
+}
+@media (min-width: 991.5px) {
+  .ghyCyp {
+    margin-top: 70px;
+    min-height: calc(-334px + 100vh);
+  }
+}
+@media (min-width: 768px) {
+  .jjxrQb .page main {
+    margin-top: 84px;
+    padding-top: 0px;
+  }
+}
+@media (min-width: 991.5px) {
+  .jjxrQb .page main {
+    margin-top: -25px;
+  }
+}
+.edXpjb {
+  padding: 20px 0px;
+  line-height: 1.5;
+  margin-top: 13px !important;
+}
+@media (min-width: 768px) {
+  .edXpjb {
+    margin-top: 19px !important;
+  }
+}
+@media (min-width: 991.5px) {
+  .edXpjb {
+    order: 1;
+    padding: 0px 20px;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-top: 25px !important;
+  }
+}
+@media (min-width: 1281px) {
+  .edXpjb {
+    max-width: 612px;
+  }
+}
+.ifotlQ {
+  padding: 0px 0px 20px;
+}
+@media (min-width: 991.5px) {
+  .ifotlQ {
+    width: 24%;
+    max-width: 334px;
+  }
+}
+.gtwFQX {
+  padding: 20px 0px;
+}
+@media (min-width: 991.5px) {
+  .gtwFQX {
+    width: 24%;
+    top: 105px;
+    max-width: 334px;
+  }
+}
+.gtwFQX nav {
+  width: 100%;
+}
+.defcsJ {
+  margin-top: 65px;
+}
+@media (max-width: 767.5px) {
+  .hjbdxl {
+    margin-top: 40px;
+  }
+}
+/*! CSS Used keyframes */
+@-webkit-keyframes delay-overflow {
+  0% {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+@keyframes delay-overflow {
+  0% {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+@-webkit-keyframes delay-overflow {
+  0% {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+@keyframes delay-overflow {
+  0% {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+/*! CSS Used fontfaces */
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX-KVElMYYaJe8bpLHnCwDKhdTuGqZJSdY.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX-KVElMYYaJe8bpLHnCwDKhdTuE6ZJSdY.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX-KVElMYYaJe8bpLHnCwDKhdTuFKZJSdY.woff2)
+    format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1,
+    U+03A3-03FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX-KVElMYYaJe8bpLHnCwDKhdTuGKZJSdY.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX-KVElMYYaJe8bpLHnCwDKhdTuGaZJSdY.woff2)
+    format("woff2");
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX-KVElMYYaJe8bpLHnCwDKhdTuF6ZJ.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX7KVElMYYaJe8bpLHnCwDKhdTm5IVce_fuNmo.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX7KVElMYYaJe8bpLHnCwDKhdTm5IVccvfuNmo.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX7KVElMYYaJe8bpLHnCwDKhdTm5IVcdffuNmo.woff2)
+    format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1,
+    U+03A3-03FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX7KVElMYYaJe8bpLHnCwDKhdTm5IVceffuNmo.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX7KVElMYYaJe8bpLHnCwDKhdTm5IVcePfuNmo.woff2)
+    format("woff2");
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX7KVElMYYaJe8bpLHnCwDKhdTm5IVcdvfu.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX7KVElMYYaJe8bpLHnCwDKhdTmrINce_fuNmo.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX7KVElMYYaJe8bpLHnCwDKhdTmrINccvfuNmo.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX7KVElMYYaJe8bpLHnCwDKhdTmrINcdffuNmo.woff2)
+    format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1,
+    U+03A3-03FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX7KVElMYYaJe8bpLHnCwDKhdTmrINceffuNmo.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX7KVElMYYaJe8bpLHnCwDKhdTmrINcePfuNmo.woff2)
+    format("woff2");
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX7KVElMYYaJe8bpLHnCwDKhdTmrINcdvfu.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYXgKVElMYYaJe8bpLHnCwDKhdzeFb5N.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYXgKVElMYYaJe8bpLHnCwDKhdXeFb5N.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYXgKVElMYYaJe8bpLHnCwDKhdLeFb5N.woff2)
+    format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1,
+    U+03A3-03FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYXgKVElMYYaJe8bpLHnCwDKhd7eFb5N.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYXgKVElMYYaJe8bpLHnCwDKhd_eFb5N.woff2)
+    format("woff2");
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYXgKVElMYYaJe8bpLHnCwDKhdHeFQ.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX9KVElMYYaJe8bpLHnCwDKjSL9AIxsdO_q.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX9KVElMYYaJe8bpLHnCwDKjSL9AIVsdO_q.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX9KVElMYYaJe8bpLHnCwDKjSL9AIJsdO_q.woff2)
+    format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1,
+    U+03A3-03FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX9KVElMYYaJe8bpLHnCwDKjSL9AI5sdO_q.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX9KVElMYYaJe8bpLHnCwDKjSL9AI9sdO_q.woff2)
+    format("woff2");
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX9KVElMYYaJe8bpLHnCwDKjSL9AIFsdA.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIxsdO_q.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIVsdO_q.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIJsdO_q.woff2)
+    format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1,
+    U+03A3-03FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX9KVElMYYaJe8bpLHnCwDKjWr7AI5sdO_q.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX9KVElMYYaJe8bpLHnCwDKjWr7AI9sdO_q.woff2)
+    format("woff2");
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFsdA.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "icomoon";
+  src: url(data:application/vnd.ms-fontobject;base64,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);
+  src: url(data:application/vnd.ms-fontobject;base64,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#iefix)
+      format("embedded-opentype"),
+    url(data:font/ttf;base64,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)
+      format("truetype"),
+    url(data:font/woff;base64,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)
+      format("woff"),
+    url(https://static.hindawi.com/next_assets/yWtXSflDw7q_hDYibdZYB/_next/static/node_modules/hindawi-ui/src/iconFont/icomoon/fonts/icomoon.svg#icomoon)
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX-KVElMYYaJe8bpLHnCwDKhdTuGqZJSdY.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX-KVElMYYaJe8bpLHnCwDKhdTuE6ZJSdY.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX-KVElMYYaJe8bpLHnCwDKhdTuFKZJSdY.woff2)
+    format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1,
+    U+03A3-03FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX-KVElMYYaJe8bpLHnCwDKhdTuGKZJSdY.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX-KVElMYYaJe8bpLHnCwDKhdTuGaZJSdY.woff2)
+    format("woff2");
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX-KVElMYYaJe8bpLHnCwDKhdTuF6ZJ.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX7KVElMYYaJe8bpLHnCwDKhdTm5IVce_fuNmo.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX7KVElMYYaJe8bpLHnCwDKhdTm5IVccvfuNmo.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX7KVElMYYaJe8bpLHnCwDKhdTm5IVcdffuNmo.woff2)
+    format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1,
+    U+03A3-03FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX7KVElMYYaJe8bpLHnCwDKhdTm5IVceffuNmo.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX7KVElMYYaJe8bpLHnCwDKhdTm5IVcePfuNmo.woff2)
+    format("woff2");
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX7KVElMYYaJe8bpLHnCwDKhdTm5IVcdvfu.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX7KVElMYYaJe8bpLHnCwDKhdTmrINce_fuNmo.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX7KVElMYYaJe8bpLHnCwDKhdTmrINccvfuNmo.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX7KVElMYYaJe8bpLHnCwDKhdTmrINcdffuNmo.woff2)
+    format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1,
+    U+03A3-03FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX7KVElMYYaJe8bpLHnCwDKhdTmrINceffuNmo.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX7KVElMYYaJe8bpLHnCwDKhdTmrINcePfuNmo.woff2)
+    format("woff2");
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX7KVElMYYaJe8bpLHnCwDKhdTmrINcdvfu.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYXgKVElMYYaJe8bpLHnCwDKhdzeFb5N.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYXgKVElMYYaJe8bpLHnCwDKhdXeFb5N.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYXgKVElMYYaJe8bpLHnCwDKhdLeFb5N.woff2)
+    format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1,
+    U+03A3-03FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYXgKVElMYYaJe8bpLHnCwDKhd7eFb5N.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYXgKVElMYYaJe8bpLHnCwDKhd_eFb5N.woff2)
+    format("woff2");
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYXgKVElMYYaJe8bpLHnCwDKhdHeFQ.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX9KVElMYYaJe8bpLHnCwDKjSL9AIxsdO_q.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX9KVElMYYaJe8bpLHnCwDKjSL9AIVsdO_q.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX9KVElMYYaJe8bpLHnCwDKjSL9AIJsdO_q.woff2)
+    format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1,
+    U+03A3-03FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX9KVElMYYaJe8bpLHnCwDKjSL9AI5sdO_q.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX9KVElMYYaJe8bpLHnCwDKjSL9AI9sdO_q.woff2)
+    format("woff2");
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX9KVElMYYaJe8bpLHnCwDKjSL9AIFsdA.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIxsdO_q.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIVsdO_q.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIJsdO_q.woff2)
+    format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1,
+    U+03A3-03FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX9KVElMYYaJe8bpLHnCwDKjWr7AI5sdO_q.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX9KVElMYYaJe8bpLHnCwDKjWr7AI9sdO_q.woff2)
+    format("woff2");
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v19/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFsdA.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}

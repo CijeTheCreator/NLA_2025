@@ -1,0 +1,150 @@
+/* Add this CSS in your stylesheets or within a <style> tag in the HTML */
+
+@media only screen and (max-width: 768px) {
+  body {
+    margin-top: 0;
+    padding: 10px;
+  }
+
+  header {
+    padding: 10px !important;
+  }
+
+  .sc-bZQynM {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sc-jzJRlG {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sc-ifAKCX {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .sc-ifAKCX .navigation__link {
+    margin: 10px 0;
+  }
+
+  .ant-layout-content {
+    margin-top: 0;
+    padding: 10px;
+  }
+
+  .ant-breadcrumb {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .ant-row.ThreeColumnLayout_wrapper__gPK_l {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ant-col.ThreeColumnLayout_middleColumn__sbd41 {
+    transform: translateY(-7%);
+  }
+
+  .ant-col.ThreeColumnLayout_middleColumn__sbd41,
+  .ant-col.ThreeColumnLayout_rightColumn__b_MuL {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  .ArticleMiddleSection_articleMiddleSection__gAv9z {
+    padding: 10px;
+  }
+
+  .ArticleRightSection_articleRightSection__rG8Zh {
+    margin-top: 20px;
+  }
+
+  .articleHeader__title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .articleHeader__authors {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .articleHeader__timeline_item {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  iframe {
+    height: 400px;
+    width: 100%;
+  }
+
+  .articleToolbarStatistics_column__R2GqD {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .articleToolbarStatistics_amount__vJIDp {
+    font-size: 14px;
+  }
+
+  header {
+    padding: 0 10px !important;
+  }
+
+  .header__padding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobileLogoFlex {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .mobileLogoFlex a img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .JournalNavigation_journalHeader__title__fsEHD {
+    padding-left: 0 !important;
+    text-align: center;
+  }
+
+  .JournalNavigation_journalHeader__vGN2X {
+    position: unset;
+  }
+  header img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Remove margin from the header */
+  header h1 {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header img {
+    transform: scale(200%);
+  }
+}
